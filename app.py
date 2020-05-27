@@ -1,5 +1,3 @@
-from datetime import date, datetime, timedelta
-start = datetime.now()
 import dash
 import dash_core_components as dcc
 import dash_html_components as html
@@ -31,6 +29,13 @@ home_page = html.Div(children=[html.Div([html.H1(children = 'D&D Data',
 app = dash.Dash(__name__, external_stylesheets = [dbc.themes.FLATLY])
 server = app.server
 app.config.suppress_callback_exceptions = True
+
+import dash_auth
+
+VALID_USERNAME_PASSWORD_PAIRS = {'dandd':'london123'}
+
+auth = dash_auth.BasicAuth(app,VALID_USERNAME_PASSWORD_PAIRS)
+
 app.layout = html.Div([dcc.Location(id='url', refresh=False),
                        html.Div([nav]),
                        html.Div(id='page-content')])

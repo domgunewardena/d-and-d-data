@@ -7,6 +7,7 @@ dash-html-components
 dash-bootstrap-components
 dash-renderer
 dash-table
+dash-auth
 dask==2.1.0
 decorator==4.4.0
 Flask==1.1.1
