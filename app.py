@@ -29,6 +29,7 @@ home_page = html.Div(children=[html.Div([html.H1(children = 'D&D Data',
                                                         'backgroundColor': "rgb(250,250,250)"})])])
 
 app = dash.Dash(__name__, external_stylesheets = [dbc.themes.FLATLY])
+server = app.server
 app.config.suppress_callback_exceptions = True
 app.layout = html.Div([dcc.Location(id='url', refresh=False),
                        html.Div([nav]),
