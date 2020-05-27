@@ -1,7 +1,7 @@
 certifi==2019.6.16
 chardet==3.0.4
 Click==7.0
-dash==1.1.1
+dash
 dash-core-components
 dash-html-components
 dash-bootstrap-components
