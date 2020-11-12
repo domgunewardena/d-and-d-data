@@ -1,5 +1,6 @@
 certifi==2019.6.16
 chardet==3.0.4
+chart_studio
 Click==7.0
 dash
 dash-core-components
@@ -28,4 +29,5 @@ pytz==2019.1
 requests
 six==1.12.0
 traitlets==4.3.2
+ua_parser
 Werkzeug==0.15.4
